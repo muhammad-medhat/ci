@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Contact extends Model
+class ContactModel extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'contacts';
@@ -14,7 +14,7 @@ class Contact extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['name', 'phone', 'photo'];
 
     // Dates
     protected $useTimestamps = false;

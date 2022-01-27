@@ -6,7 +6,6 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('index',  $this->data);
-    
+        return view('welcome_message');
     }
 }

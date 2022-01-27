@@ -35,7 +35,7 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = ['html'];
+    protected $helpers = ['html', 'form'];
 
     /**
      * Constructor.
@@ -49,9 +49,11 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
 
-        
         $this->data['method'] = $this->request->getMethod();
         $this->data['APPNAME'] = "Phonebook Application";
+        $this->data['title'] = "Phonebook Application";
+
+        // var_dump($this->data);
 
     }
 }
